@@ -1,0 +1,26 @@
+﻿@page
+<div style="font-family:Arial" class="pure-form container">
+    <div class="row p-1">
+        <div style="color: teal; font-weight: bold" class="col-1">User</div>
+        <div><input type="text"  id="userInput" /></div>
+    </div>
+    <div class="row p-1">
+        <div style="color: teal; font-weight:bold" class="col-1">Message</div>
+        <div><input type="text" id="messageInput" /></div>
+    </div>
+    <div class="row p-1">
+        <div class="text-end">
+            <input type="button" class="pure-button pure-button-primary" id="sendButton" value="Send Message" />
+        </div>
+    </div>
+    <br />
+    <div style="color: slategrey; font-weight: bold" class="row p-1">
+        <div class="pure-menu pure-menu-scrollable custom-restricted">
+            <ul class="pure-menu-list" id="messagesList"></ul>
+        </div>
+    </div>
+
+</div>
+
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/chat.js"></script>
